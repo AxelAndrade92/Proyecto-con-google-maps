@@ -1,0 +1,163 @@
+@CHARSET "ISO-8859-1";
+
+.wrapper{
+	
+	width: 100%;
+	height: 100%;
+}
+
+.body{
+	
+	background-color: #55717b;
+	font-family: "arial", sans-serif;
+	
+}
+
+
+.botones_grow{
+	
+	width: 556px;
+	height: 114px;
+	margin: auto;
+	margin-bottom: 20px;
+	margin-top: 100px;
+}
+
+.margenes{
+	
+	margin-top: 40px;	
+}
+
+.botones_grow a{
+	text-decoration:none;
+}
+
+.botones_grow input{
+	
+	-webkit-appearance: none;
+	border: none;
+}
+
+.botones_grow button{
+	
+	-webkit-appearance: none;
+	border: none;
+}
+
+.dimensiones{
+	width: 120px;
+	height: 100px;
+	background-color: #abe2f7;
+	color: #55717b;
+	font-size: 20px;
+	text-align: center;
+	margin: 7px;
+	cursor: pointer;
+	font-weight: bold;
+	display: inline-block;
+}
+
+
+
+/*Efecto grow - aumentar*/
+.button_grow{
+  	vertical-align: middle;
+  	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: grayscale;
+  	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+}
+
+.button_grow:hover{
+	
+	-webkit-transform: scale(1.2);
+ 	 transform: scale(1.2);
+	background-color: #e2f7ab;
+}
+
+.button_grow:active, .button_grow:focus {
+	background-color: #f7c0ab;
+}
+
+
+
+/*Efecto shrink - encoger*/
+.button_shrink{
+  	vertical-align: middle;
+  	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: grayscale;
+  	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+}
+
+.button_shrink:hover{
+	
+	-webkit-transform: scale(0.8);
+ 	 transform: scale(0.8);
+	background-color: #e2f7ab;
+}
+
+
+.button_shrink:active, .button_shrink:focus {
+	background-color: #f7c0ab;
+}
+
+
+/* Efecto Pulse - aumentar y encoger */
+@-webkit-keyframes button_pulse {
+  30% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  80% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+@keyframes button_pulse {
+  30% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+  80% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+
+.button_pulse {
+  	vertical-align: middle;
+  	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: grayscale;
+  	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+}
+
+.button_pulse:hover, .button_pulse:focus, .button_pulse:active {
+  -webkit-animation-name: button_pulse;
+  animation-name: button_pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-color: #e2f7ab;
+}
+
+
+
+
+.pie{
+	
+	margin-top: 20px;
+	width:200px;
+	height:10px;
+	font-size:10px;
+	margin: auto;
+	font-style: oblique;
+	text-align: center;
+}

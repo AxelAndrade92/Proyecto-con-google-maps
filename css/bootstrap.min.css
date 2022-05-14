@@ -1,0 +1,89 @@
+*{
+	font-family: Arial;
+}
+.container{
+	background-color: #24607f;*/
+	/*background-image: url("../img/Clean-Green.jpg");*/
+	padding: 0;
+	margin: 0;
+
+}
+
+.jumbotron {
+	/*background:#24607f;*/
+	padding: 30px 0;
+	/*background-image: url("../img/Clean-Green.jpg");*/
+    /*background-size: cover;*/
+  /*  margin-left: 50px;
+    margin-right: 50px;*/
+}
+.texto1{
+	color: #F3FF04;
+	font-size: 50px;
+	text-align: center;
+}
+
+.body{
+	background-color: #24607f;
+	padding: 0;
+	margin: 0;
+
+}
+/*.logo1{
+	width: 178px;
+    height: 180px;
+    border-top-width: 2px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    float: right;
+    vertical-align: top;
+}*/
+.boton_submit{
+	border-bottom: #F3FF04;
+	background-color: #F3FF04;
+	
+}
+.menu{
+    background-color: #24607f;
+    /*background-image: url("../img/Clean-Green.jpg");*/
+    text-align: center;
+    top: 0;
+    width: 850px;
+    padding: 1px;
+    position: float;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+    margin-left: 50px;
+	margin-right: 50px;
+}
+.menu ul{
+	margin: 0;
+	padding: 0;
+	align-content: center;
+}
+.menu ul li{
+	list-style: none;
+	display:inline-block;
+	padding: 40px 10px;
+	margin-left: 50px;
+	margin-right: 10px;
+	position: relative;
+	
+}
+.menu ul li a{
+	color:#000;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 40px 10px;
+	text-decoration: none;
+}
+.menu ul li a:hover{
+	background-color: #ff5105;
+	color:#fff;
+}
+
+}

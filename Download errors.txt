@@ -1,0 +1,12 @@
+﻿Sorry, there was a problem downloading some files from OneDrive. Please try again.
+
+estilos3.css - https://onedrive.live.com/?cid=e95c4c491b058d2f&id=E95C4C491B058D2F%2120186&action=Download&authKey=!AreuVlaj4_7Qrf4
+
+panel.php - https://onedrive.live.com/?cid=e95c4c491b058d2f&id=E95C4C491B058D2F%2120161&action=Download&authKey=!AreuVlaj4_7Qrf4
+
+redireccionar.php - https://onedrive.live.com/?cid=e95c4c491b058d2f&id=E95C4C491B058D2F%2120157&action=Download&authKey=!AreuVlaj4_7Qrf4
+
+registro_incidente - https://onedrive.live.com/?cid=e95c4c491b058d2f&id=E95C4C491B058D2F%2120155&action=Download&authKey=!AreuVlaj4_7Qrf4
+
+
+

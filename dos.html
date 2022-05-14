@@ -1,0 +1,90 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" /> 
+<style type="text/css"> 
+  html { height: 100% } 
+  body { height: 100%; margin: 0; padding: 0 } 
+  #map_canvas { height: 100% } 
+</style> 
+<button id="drop" onclick="TestMarker()">Drop</button>  
+<script type="text/javascript" 
+    src="http://maps.googleapis.com/maps/api/js?sensor=false"> 
+</script> 
+<script type="text/javascript"> 
+
+    // Standard google maps function 
+    function initialize() { 
+        /*var myLatlng = new google.maps.LatLng(52.469397,-3.208008);
+        var myOptions = { 
+            zoom: 8, 
+            center: myLatlng, 
+            mapTypeId: google.maps.MapTypeId.ROADMAP 
+        } 
+        map = new google.maps.Map(document.getElementById("map_canvas"), myOptions); 
+         */
+         navigator.geolocation.getCurrentPosition(
+          function (position){
+            coords =  {
+              lng: position.coords.longitude,
+              lat: position.coords.latitude
+
+            };
+            setMapa(coords);  //pasamos las coordenadas al metodo para crear el mapa            
+            /*if (navigator.geolocation.getCurrentPosition=true) {
+            alert("Latitud y Longitud de su posicion obtenidos con Exito!");
+            }*/
+          },function(error){console.log(error);});
+    } 
+    function setMapa (coords)
+{   
+      //Se crea una nueva instancia del objeto mapa
+      var map = new google.maps.Map(document.getElementById('map'),
+      {
+        zoom: 18,
+        center:new google.maps.LatLng(coords.lat,coords.lng),
+        mapTypeControl: true,
+        streetViewControl: true,
+        scrollwheel: true,
+        setCompassEnabled:true,
+        mapTypeId:google.maps.MapTypeId.HYBRID,        
+        // mapType:terrain,
+        // featureType: "road",
+         elementType: "labels",
+
+      });
+    // map = new google.maps.Map(document.getElementById("map_canvas"), myOptions); 
+
+    // Function for adding a marker to the page. 
+    function addMarker(location) { 
+        marker = new google.maps.Marker({ 
+            position: location, 
+            map: map,
+    animation: google.maps.Animation.DROP  ,
+    draggable:true
+        }); 
+    } 
+
+    // Testing the addMarker function 
+    function TestMarker() { 
+Marker1=new google.maps.LatLng(52.268000,-3.043000); addMarker(Marker1); 
+Marker23=new google.maps.LatLng(51.524243,-3.193911); addMarker(Marker23); 
+Marker24=new google.maps.LatLng(51.524243,-3.193911); addMarker(Marker24); 
+Marker25=new google.maps.LatLng(51.524243,-3.193911); addMarker(Marker25); 
+Marker26=new google.maps.LatLng(51.524243,-3.193911); addMarker(Marker26); 
+Marker584=new google.maps.LatLng(51.747777,-3.500599); addMarker(Marker584); 
+Marker585=new google.maps.LatLng(51.608871,-3.647570); addMarker(Marker585); 
+
+    } 
+</script> 
+</head> 
+<body onload="initialize()"> 
+
+
+  <div id="map" style="border: 1px solid black; width: 500px; height: 400px;">map     div</div> 
+<p style="margin-top: 5px"> 
+  <button id="drop">Drop</button>  
+</p> 
+
+</body> 
+</html>

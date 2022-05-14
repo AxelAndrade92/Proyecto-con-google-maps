@@ -1,0 +1,121 @@
+  @media (min-width: 1200px){
+    body{ color: black;} 
+  } 
+  /* Escritorio pequeño o una tablet */
+  @media (min-width: 768px) and (max-width: 979px){
+    body{ color: black;} 
+  } 
+  /* Tablet o SmartPhone */
+  @media (max-width: 767px){
+    body{ color: black;} 
+  } 
+  /* SmartPhone */
+  @media (max-width: 480px){
+    body{ color: black;} 
+  } 
+  .text-big {
+    font-size: 300px;
+    line-height: 320px;
+  }
+#button{
+  /*background-color: #2F73BD;*/
+  height: 40px;
+  width: 70px;
+  border-radius: 5px;
+}
+#buttonh{
+  background-color: #9841D5;
+  height: 40px;
+  width: 70px;
+  border-radius: 5px;
+}
+#buttonr{
+  background-color: #43CBE1;
+  height: 40px;
+  width: 70px;
+  border-radius: 5px;
+}
+#buttonrr{
+  background-color: #43CBE1;
+  height: 40px;
+  width: 70px;
+  border-radius: 5px;
+  position: relative;
+}
+.jumbotron {
+background-color: #A69896;
+height: 100px;
+background-image: url(../img/bomberos.jpg);
+background-size: cover;
+background-position: 0% 25%;
+text-shadow: white 0.3em 0.3em 0.3em;
+}
+.body{
+  background-color: #f7f7f6;
+  height: 100%;
+  margin: 0;
+  padding: 0
+}
+#h3{
+ margin: 30px;
+ margin-top: 20px;
+}
+
+#map{
+  width: 600px;
+  height: 350px;       
+  border-radius: 20px;
+  border-style: inset;
+  margin-left: 257px;
+  position: float;
+}
+#coords{
+  width: 200px;
+  margin:auto;
+}
+
+html{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}     
+.right{
+ float: right;
+ margin-right: 50px;
+}
+.left{
+  float: left;
+  margin-left: 30px;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius:10px 10px 10px 10px;
+  -webkit-border-radius:10px 10px 10px 10px;
+  border:0px solid #000000;
+  background: #527BA8;
+  border-style: inset;
+}
+.center{
+  display:inline-block; 
+}
+#button_text{
+  font-size: 20px;  
+}
+.fondo_logout{
+  background-image: url(../img/fondo_logout.png);
+  background-size: 100% 100%;
+  background-attachment: fixed;
+}
+.parrafo{
+  font-size: 70%;
+}
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+
+input[type=text]{
+  border-radius: 5px;
+  text-align:center;
+}
+
+
+
+
