@@ -19,7 +19,7 @@ if (isset($_SESSION['user']))//si se configuro la pagina con mi usuario anterior
     <link href="css/botonesCSS1.css" rel="stylesheet" type="text/css">  
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCy3sBztwbAWJn4_PuBTwdG5S67K4aliLE" ></script>    
+    <!-- aqui va la api de google maps-->
     
   </head>
 
@@ -208,9 +208,7 @@ if (isset($_SESSION['user']))//si se configuro la pagina con mi usuario anterior
     }
 </script>
 
-<!-- src="https://maps.googleapis.com/maps/api/js?key=AIzaSyABUtwiQ6rHqrk4bvY6-FDPG9TInI27KV8" -->
-<!-- src="http://maps.googleapis.com/maps/api/js?" -->
-<!--https://maps.googleapis.com/maps/api/js?callback=initMap https://maps.googleapis.com/maps/api/js?key=AIzaSyCo6FUFiHoSntxqiveC0jNe_ajAabIlLQ8
+
  -->
    <a href="logout.php"><button>Salir</button></a>
   </body>
